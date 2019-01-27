@@ -113,19 +113,23 @@ def Topstockresearch():
 	
 	
 	if Fut_Price > Piv_point and Fut_Price < Resistance1:
-		print("Alert for Jubliant Short @", Resistance1)
+		print("Alert for Jubliant Short @", Resistance1) 
+		text = "Alert for Jubliant Short @" + str(Resistance1) + " Current Price @" + str(Cur_Price)
 	elif Fut_Price < Piv_point and Fut_Price > Support1:
-		print("Alert for Jubliant Long @", Support1)
-		text = "Alert for Jubliant Long @" + str(Support1)
-		#url =  Url + "sendMessage?text={}&chat_id={}".format(text, chat_id)
+		print("Alert for Jubliant Long @", Support1) 
+		text = "Alert for Jubliant Long @" + str(Support1) + " Current Price @" + str(Cur_Price)
 	elif Fut_Price > Support2 and Fut_Price < Support1:
-		print("Alert for Jubliant Long @", Support2)
+		print("Alert for Jubliant Long @", Support2) 
+		text = "Alert for Jubliant Long @" + str(Support2) + " Current Price @" + str(Cur_Price)
 	elif Fut_Price > Support3 and Fut_Price < Support2:
-		print("Alert for Jubliant Long@", Support3)
+		print("Alert for Jubliant Long@", Support3) 
+		text = "Alert for Jubliant Long @" + str(Support3) + " Current Price @" + str(Cur_Price)
 	elif Fut_Price > Resistance1 and Fut_Price < Resistance2:
-		print("Alert for Jubliant Short @", Resistance2)
+		print("Alert for Jubliant Short @", Resistance2) 
+		text = "Alert for Jubliant Short @" + str(Resistance2) + " Current Price @" + str(Cur_Price)
 	elif Fut_Price > Resistance2 and Fut_Price < Resistance3:
-		print("Alert for Jubliant Short @", Resistance3)
+		print("Alert for Jubliant Short @", Resistance3) 
+		text = "Alert for Jubliant Short @" + str(Resistance3) + " Current Price @" + str(Cur_Price)
 	
 	return text
 	
